@@ -59,3 +59,6 @@ A demo application featuring;
                 }
             });
         });
+        
+## Whats next? 
+[This video library](https://www.youtube.com/playlist?list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl) has a comprehensive list of advanced Angular 1.x topics.
