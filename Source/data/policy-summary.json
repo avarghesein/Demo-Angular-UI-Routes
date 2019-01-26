@@ -1,0 +1,34 @@
+﻿[
+    {
+        "PolicyNumber": "1234567",
+        "PolicyType": "Saving",
+        "Branch": "Dullas",
+        "Name": "Smith",
+        "CY": "US Dollar",
+        "AvailableBalance": 320.23
+    },
+    {
+        "PolicyNumber": "XV232332",
+        "PolicyType": "Saving",
+        "Branch": "Arizona",
+        "Name": "Keith",
+        "CY": "US Dollar",
+        "AvailableBalance": 800.23
+    },
+    {
+        "PolicyNumber": "TV123434",
+        "PolicyType": "Saving",
+        "Branch": "Dullas",
+        "Name": "John",
+        "CY": "US Dollar",
+        "AvailableBalance": 457.23
+    },
+    {
+        "PolicyNumber": "L3456",
+        "PolicyType": "Saving",
+        "Branch": "New York",
+        "Name": "Rick",
+        "CY": "US Dollar",
+        "AvailableBalance": 1000.23
+    }
+]

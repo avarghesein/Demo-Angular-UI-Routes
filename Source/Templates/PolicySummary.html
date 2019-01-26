@@ -1,0 +1,36 @@
+
+
+<table>
+    <tr>
+        <td>
+            <h1>{{message}}</h1>
+            <h2>policies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Policy Number</td>
+                        <td>Policy Type</td>
+                        <td>Branch</td>
+                        <td>Name</td>
+                        <td>Currency</td>
+                        <td>Available Balance</td>
+                        <td>Transaction</td>
+                    </tr>
+                </thead>
+                <tr ng-repeat="policy in policySummary">
+                    <td>{{policy.PolicyNumber}}</td>
+                    <td>{{policy.PolicyType}}</td>
+                    <td>{{policy.Branch}}</td>
+                    <td>{{policy.Name}}</td>
+                    <td>{{policy.CY}}</td>
+                    <td>{{policy.AvailableBalance}}</td>
+                    <td>
+                        <a ui-sref="PolicyParent.Transactions({id: policy.PolicyNumber})">
+                            View
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

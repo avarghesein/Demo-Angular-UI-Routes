@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="PolicyDemo">
+<head>
+    <title>Demo Insurance App</title>
+
+    <!--<base href="/"/>-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.21/angular-ui-router.js"></script>
+
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/routes.js"></script>
+
+    <script src="Scripts/Services/AuthenticationService.js"></script>
+    <script src="Scripts/Services/PolicySummaryService.js"></script>
+    <script src="Scripts/Services/PolicyTransactionsService.js"></script>
+
+    <script src="Scripts/Controllers/loginController.js"></script>
+    <script src="Scripts/Controllers/policyParentController.js"></script>
+    <script src="Scripts/Controllers/policySummaryController.js"></script>
+    <script src="Scripts/Controllers/policyTransactionsController.js"></script>
+    <script src="Scripts/Controllers/policySearchController.js"></script>
+
+    <link href="Styles/Styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <table style="font-family: Arial">
+        <tr>
+            <td colspan="2" class="header">
+                <div style="display: inline-block;text-align:right;float:right"><a href="">About Us</a>|<a href="">Contact Us</a>|<a href="">Help</a>|<a href="">Logout</a></div>
+                <h1>
+                    Demo Insurance App
+                </h1>                
+            </td>
+        </tr>
+        <tr>
+            <td class="leftMenu">
+                <a ui-sref="PolicyParent.Summary" ui-sref-active="activeState">Policy Summary</a>
+                <a ui-sref="PolicyParent.Transactions" ui-sref-active="activeState">Transactions</a>
+                <a ui-sref="PolicyParent.Search" ui-sref-active="activeState">Search</a>
+                <a ui-sref="UserAuthentication" ui-sref-active="activeState">Login</a>
+            </td>
+            <td class="mainContent">
+                <ui-view></ui-view>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <b>Demo Insurance App</b>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

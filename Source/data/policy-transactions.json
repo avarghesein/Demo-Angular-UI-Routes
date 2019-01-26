@@ -1,0 +1,30 @@
+﻿[
+    {
+        "FromPolicy": "1234567",
+        "ToPolicy": "232323",
+        "Amount": 200,
+        "TransactionType": "Credit",
+        "Description": "Deposit"
+    },
+    {
+        "FromPolicy": "X1234567",
+        "ToPolicy": "G232323",
+        "Amount": 3000,
+        "TransactionType": "Debit",
+        "Description": "Deposit"
+    },
+    {
+        "FromPolicy": "Y1234567",
+        "ToPolicy": "A232323",
+        "Amount": 1000,
+        "TransactionType": "Debit",
+        "Description": "XYZ"
+    },
+    {
+        "FromPolicy": "A1234567",
+        "ToPolicy": "Z232323",
+        "Amount": 1000,
+        "TransactionType": "Credit",
+        "Description": "Deposit"
+    }
+]

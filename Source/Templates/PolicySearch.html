@@ -1,0 +1,30 @@
+
+
+<table>
+    <tr>
+        <td>
+            <h1>{{message}}</h1>
+            Search : <input type="text" placeholder="Search Transactions"
+                            ng-model="searchText" />
+            <br /><br />
+            <table>
+                <thead>
+                    <tr>
+                        <td>Type</td>
+                        <td>From Policy</td>
+                        <td>To Policy</td>
+                        <td>Description</td>
+                        <td>Amount</td>
+                    </tr>
+                </thead>
+                <tr ng-repeat="policy in policyTransactions | filter:searchText">
+                    <td>{{policy.TransactionType}}</td>
+                    <td>{{policy.FromPolicy}}</td>
+                    <td>{{policy.ToPolicy}}</td>
+                    <td>{{policy.Description}}</td>
+                    <td>{{policy.Amount}}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
