@@ -3,7 +3,7 @@ A demo application featuring;
 
 ## 1. Login with user name and password (admin, admin)
 
-## 2. AngularJS UI-Routing with States (Instead Of conventional routing)
+## 2. AngularJS UI-Routing with States and Custom Data to States (Instead Of conventional routing)
 
     $stateProvider
         .state("UserAuthentication", {
