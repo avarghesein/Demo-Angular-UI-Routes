@@ -1,7 +1,7 @@
 # Demo-AngularUI-Routes
 A demo application featuring;
 
-## 1. Login with user name and password as (admin, admin)
+## 1. Login with user name and password (admin, admin)
 
 ## 2. AngularJS UI-Routing with States (Instead Of conventional routing)
 
@@ -41,7 +41,7 @@ A demo application featuring;
 
 ## 4. UI-Grid usage
 
-[!alt UI-Grid](https://github.com/avarghesein/Demo-AngularUI-Routes/blob/master/Source/InsuranceDemoApp.jpg)
+![alt UI-Grid](https://github.com/avarghesein/Demo-AngularUI-Routes/blob/master/Source/InsuranceDemoApp.jpg)
 
 ## 5. Hooking between State Transitions (And cancelling transition as required)
 
