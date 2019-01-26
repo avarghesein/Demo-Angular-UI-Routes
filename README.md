@@ -5,7 +5,7 @@ A demo application featuring;
 
 ## 2. AngularJS UI-Routing with States (Instead Of conventional routing)
 
-$stateProvider
+    $stateProvider
         .state("UserAuthentication", {
             url: "/Login",
             templateUrl: "Templates/Login.html",
@@ -18,7 +18,7 @@ $stateProvider
 
 ## 3. Nested Controllers with Parent/Child controllers (using DOT convention)
 
-.state("PolicyParent", {
+    .state("PolicyParent", {
             url: "/Policy",
             controller: "policyParentController",
             controllerAs: "policyParentCtrl",
@@ -41,20 +41,21 @@ $stateProvider
 
 ## 4. UI-Grid usage
 
+[!alt UI-Grid](https://github.com/avarghesein/Demo-AngularUI-Routes/blob/master/Source/InsuranceDemoApp.jpg)
 
 ## 5. Hooking between State Transitions (And cancelling transition as required)
 
-app.run(function ($transitions)
-{
-    $transitions.onStart({}, function (transition)
-    {
-        var fromState = transition.from();
-        var toState = transition.to();
-        
-        if (toState.name !== 'UserAuthentication')
+        app.run(function ($transitions)
         {
-            var loginSuccess = transition.router.stateService.get("UserAuthentication").data.LoginSuccess;
-            return loginSuccess;
-        }
-    });
-});
+            $transitions.onStart({}, function (transition)
+            {
+                var fromState = transition.from();
+                var toState = transition.to();
+
+                if (toState.name !== 'UserAuthentication')
+                {
+                    var loginSuccess = transition.router.stateService.get("UserAuthentication").data.LoginSuccess;
+                    return loginSuccess;
+                }
+            });
+        });
