@@ -1,4 +1,4 @@
-# Demo-[AngularUI-Router](https://github.com/angular-ui/ui-router)
+# Demo-[Angular-UI-Router](https://github.com/angular-ui/ui-router)
 A demo application featuring;
 
 ## 1. Login with user name and password (admin, admin)
